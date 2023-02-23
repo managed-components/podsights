@@ -2,7 +2,9 @@
   "name": "Podsights",
   "namespace": "podsights",
   "description": "A Managed Component for making the internet better",
-  "icon": "assets/icon.svg",
+  "icon": "assets/icon.png",
+  "categories": ["Analytics"],
+  "provides": ["events"],
   "permissions": {
     "access_client_kv": {
       "description": "This permission is used to facilitate better a user experience.",

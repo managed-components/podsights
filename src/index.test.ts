@@ -1,8 +1,8 @@
 import { getRequestBody } from '.'
 
 describe('Podsights MC works correctly', () => {
-  let fetchedRequests: any = []
-  let setCookies: any = []
+  const fetchedRequests: any = []
+  const setCookies: any = []
 
   const dummyClient = {
     title: 'Zaraz "Test" /t Page',
