@@ -1,9 +1,6 @@
 import { getRequestBody } from '.'
 
 describe('Podsights MC works correctly', () => {
-  const fetchedRequests: any = []
-  const setCookies: any = []
-
   const dummyClient = {
     title: 'Zaraz "Test" /t Page',
     timestamp: 1670502437,
@@ -17,10 +14,10 @@ describe('Podsights MC works correctly', () => {
     fetch: () => undefined,
     set: () => undefined,
     execute: () => undefined,
-    return: () => {},
+    return: () => undefined,
     get: () => undefined,
-    attachEvent: () => {},
-    detachEvent: () => {},
+    attachEvent: () => undefined,
+    detachEvent: () => undefined,
   }
 
   const fakeEvent = new Event('event', {}) as MCEvent

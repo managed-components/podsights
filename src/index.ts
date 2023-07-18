@@ -28,7 +28,7 @@ export type RequestBody = {
   events: Array<PodsightEvent>
 }
 
-const asInt = s => {
+const asInt = (s: any) => {
   try {
     return parseInt(s)
   } catch {
