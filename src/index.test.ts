@@ -1,4 +1,9 @@
 import { getRequestBody } from '.'
+import crypto from 'crypto'
+
+if (!global.crypto) {
+  vi.stubGlobal('crypto', crypto)
+}
 
 describe('Podsights MC works correctly', () => {
   const dummyClient = {
